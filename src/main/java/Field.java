@@ -6,7 +6,15 @@ import java.io.PrintStream;
 public class Field {
     private boolean[][] field;
     private static String DEAD = "o ";
-    private static String ALIVE = "x ";
+    private static String ALIVE;
+    static {
+        if (OSDetector.ifLinux()) {
+            ALIVE = "\u001B[35mx \u001B[0m";
+        } else {
+            ALIVE = "x ";
+        }
+    }
+
 
     public Field(int size) {
         field = new boolean[size][size];
