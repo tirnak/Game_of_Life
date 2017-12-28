@@ -1,8 +1,5 @@
 import java.io.PrintStream;
 
-/**
- * Created by kirill on 11/11/15.
- */
 public class Field {
     private boolean[][] field;
     private static String DEAD = "o ";

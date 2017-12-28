@@ -1,11 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-/**
- * Created by kirill on 11/11/15.
- */
 public class FieldTest {
     private static String DEAD = "o ";
     private static String ALIVE;
